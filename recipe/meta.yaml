@@ -1,5 +1,5 @@
 {% set name = "pyinaturalist-convert" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d64a224cd9a7158b9156dc2a22592cd69e587b4b43fec41a1955055c03742dcd
+  sha256: b4ce4380989e49ee5613dfd334c492288e11c96a9053068a4dfb478fc917f468
 
 build:
   number: 0
@@ -27,10 +27,10 @@ requirements:
     - openpyxl >=2.6
     - pandas >=1.2
     - pyarrow >=4.0
-    - pyinaturalist >=0.15
+    - pyinaturalist >=0.16
     - pytables >=3.6
     - python-dwca-reader >=0.15
-    - requests-cache =0.7.4
+    - requests-cache >=0.9.3
     - tablib >=3.0
     - tabulate >=0.8
     - xmltodict >=0.12
