@@ -30,7 +30,7 @@ requirements:
     - pyinaturalist >=0.16
     - pytables >=3.6
     - python-dwca-reader >=0.15
-    - requests-cache >=0.9.3
+    - requests-cache >=0.9.8
     - tablib >=3.0
     - tabulate >=0.8
     - xmltodict >=0.12
