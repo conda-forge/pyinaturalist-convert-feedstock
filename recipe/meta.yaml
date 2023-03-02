@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python >=3.8
-    - poetry
+    - poetry >=1.2,<1.4
     - pip
   run:
     - python >=3.8
@@ -26,11 +26,11 @@ requirements:
     - gpxpy >=1.4.2
     - openpyxl >=2.6
     - pandas >=1.2
-    - pyarrow >=4.0
-    - pyinaturalist >=0.16
+    - pyarrow >=11.0
+    - pyinaturalist >=0.18
     - pytables >=3.6
-    - python-dwca-reader >=0.15
-    - requests-cache >=0.9.3
+    - requests-cache >=1.0
+    - sqlalchemy >=2.0
     - tablib >=3.0
     - tabulate >=0.8
     - xmltodict >=0.12
@@ -44,12 +44,12 @@ test:
     - pip check
 
 about:
-  home: https://github.com/JWCook/pyinaturalist-convert
+  home: https://github.com/pyinat/pyinaturalist-convert
   summary: Convert iNaturalist observation data to and from multiple formats
   license: MIT
   license_file: LICENSE
   doc_url: https://pyinaturalist.readthedocs.io
-  dev_url: https://github.com/JWCook/pyinaturalist-convert
+  dev_url: https://github.com/pyinat/pyinaturalist-convert
 
 
 extra:
