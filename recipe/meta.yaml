@@ -1,5 +1,5 @@
 {% set name = "pyinaturalist-convert" %}
-{% set version = "0.2.2" %}
+{% set version = "0.6.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b4ce4380989e49ee5613dfd334c492288e11c96a9053068a4dfb478fc917f468
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: ced5c3dace17c2f2229e6d2a4c814f9bdf77a8bb111fce7d605af28e7b0be3f6
 
 build:
   number: 0
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python >=3.8
-    - poetry
+    - poetry >=1.2,<1.4
     - pip
   run:
     - python >=3.8
@@ -26,11 +26,11 @@ requirements:
     - gpxpy >=1.4.2
     - openpyxl >=2.6
     - pandas >=1.2
-    - pyarrow >=4.0
-    - pyinaturalist >=0.16
+    - pyarrow >=11.0
+    - pyinaturalist >=0.18
     - pytables >=3.6
-    - python-dwca-reader >=0.15
-    - requests-cache >=0.9.3
+    - requests-cache >=1.0
+    - sqlalchemy >=2.0
     - tablib >=3.0
     - tabulate >=0.8
     - xmltodict >=0.12
@@ -44,12 +44,12 @@ test:
     - pip check
 
 about:
-  home: https://github.com/JWCook/pyinaturalist-convert
+  home: https://github.com/pyinat/pyinaturalist-convert
   summary: Convert iNaturalist observation data to and from multiple formats
   license: MIT
   license_file: LICENSE
   doc_url: https://pyinaturalist.readthedocs.io
-  dev_url: https://github.com/JWCook/pyinaturalist-convert
+  dev_url: https://github.com/pyinat/pyinaturalist-convert
 
 
 extra:
