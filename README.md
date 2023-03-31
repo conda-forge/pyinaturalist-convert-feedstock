@@ -3,13 +3,13 @@ About pyinaturalist-convert-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyinaturalist-convert-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/JWCook/pyinaturalist-convert
+Home: https://github.com/pyinat/pyinaturalist-convert
 
 Package license: MIT
 
 Summary: Convert iNaturalist observation data to and from multiple formats
 
-Development: https://github.com/JWCook/pyinaturalist-convert
+Development: https://github.com/pyinat/pyinaturalist-convert
 
 Documentation: https://pyinaturalist.readthedocs.io
 
