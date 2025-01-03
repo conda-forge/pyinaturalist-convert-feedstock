@@ -1,5 +1,5 @@
 {% set name = "pyinaturalist-convert" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.7" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a7b20b58f9ebf74a5093effb3510cb43e953484a32ddf3e499a0a22bc2a3a1a5
+  sha256: 0b968276e764a07509bebb68a2eef37821b4b9697e5475de02836dd53996b6ce
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
