@@ -1,5 +1,7 @@
 {% set name = "pyinaturalist-convert" %}
-{% set version = "0.6.7" %}
+{% set python_min = "3.10" %}
+{% set version = "0.7.0" %}
+{% set hash_val = "404e805e7cb027817590cdef1eb4c255b1f5fbfd1e3852741b1ce9f1803e3371" %}
 
 
 package:
@@ -8,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0b968276e764a07509bebb68a2eef37821b4b9697e5475de02836dd53996b6ce
+  sha256: {{ hash_val }}
 
 build:
   number: 0
@@ -18,8 +20,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry >=1.2,<1.4
     - pip
+    - hatchling
   run:
     - python >={{ python_min }}
     - flatten-dict >=0.4
@@ -27,9 +29,9 @@ requirements:
     - openpyxl >=2.6
     - pandas >=1.2
     - pyarrow >=11.0
-    - pyinaturalist >=0.18
+    - pyinaturalist >=0.20.1
     - pytables >=3.6
-    - requests-cache >=1.0
+    - requests-cache >=1.2
     - sqlalchemy >=2.0
     - tablib >=3.0
     - tabulate >=0.8
@@ -38,6 +40,8 @@ requirements:
 test:
   imports:
     - pyinaturalist_convert
+  commands:
+    - pip check
   requires:
     - pip
     - python {{ python_min }}
