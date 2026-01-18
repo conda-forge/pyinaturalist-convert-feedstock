@@ -1,7 +1,7 @@
 {% set name = "pyinaturalist-convert" %}
 {% set python_min = "3.10" %}
-{% set version = "0.7.2" %}
-{% set hash_val = "a67ee65d7b7e2a5544d36611a52e131834f7f992ff5bd85929dc9ce64200100d" %}
+{% set version = "0.7.4" %}
+{% set hash_val = "bbc3c7f93aee7b76f39afd4445ac986a8143681ba301d3dba318a638a61a10b2" %}
 
 
 package:
