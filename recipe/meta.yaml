@@ -1,7 +1,7 @@
 {% set name = "pyinaturalist-convert" %}
 {% set python_min = "3.10" %}
-{% set version = "0.7.5" %}
-{% set hash_val = "94f71fcaad473923af0c83d449e3644904d53d4eb5639ea927caa31b1aa9351b" %}
+{% set version = "0.8.0" %}
+{% set hash_val = "e6d2668940fe236f4708b4a4f5e6b4ee68a4552d7bfc69799dc1d0b559d3d54a" %}
 
 
 package:
@@ -32,6 +32,7 @@ requirements:
     - pyinaturalist >=0.20.1
     - pytables >=3.6
     - requests-cache >=1.2
+    - requests-ratelimiter >=0.6,<0.9
     - sqlalchemy >=2.0
     - tablib >=3.0
     - tabulate >=0.8
