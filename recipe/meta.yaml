@@ -32,6 +32,7 @@ requirements:
     - pyinaturalist >=0.20.1
     - pytables >=3.6
     - requests-cache >=1.2
+    - requests-ratelimiter >=0.6,<0.9
     - sqlalchemy >=2.0
     - tablib >=3.0
     - tabulate >=0.8
