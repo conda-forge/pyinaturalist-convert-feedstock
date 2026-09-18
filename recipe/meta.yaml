@@ -1,7 +1,7 @@
 {% set name = "pyinaturalist-convert" %}
 {% set python_min = "3.10" %}
-{% set version = "0.8.3" %}
-{% set hash_val = "e40dc22029306b6b92a34d03f76cc8ddcf00ae927479ab5a1816f4ff7f4021b0" %}
+{% set version = "0.9.1" %}
+{% set hash_val = "59774b11761c67887cb599b223516e3e104ed34bab5fdb0a5a40feebe210c23b" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ hash_val }}
 
 build:
